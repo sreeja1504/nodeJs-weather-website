@@ -29,7 +29,7 @@ const forecast = (latitude, longitude, callback) => {
             // console.log(undefined, response.body.current.temperature);
 
             console.log(body);
-            callback(undefined, body.current.weather_descriptions[0] + " throughout the day .It is currently "+ 
+            callback(undefined,"Current location is "+body.location.name+ ". "+ body.current.weather_descriptions[0] + " throughout the day .It is currently "+ 
             body.current.temperature+" degrees out. "+" There is "+ body.current.precip +" % chance of rain" + " Humidity is "+body.current.precip +"%");
 
 
